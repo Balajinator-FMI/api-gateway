@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: fmi-codes-proj-gateway
+  cloud:
+    gateway:
+      routes:
+#        - id: DEMO-SERVICE
+#          uri: demo-uri
+#          predicates:
+#            - Path=/demo/path

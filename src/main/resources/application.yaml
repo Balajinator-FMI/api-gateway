@@ -7,10 +7,6 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: UV-SERVICE
-          uri: http://localhost:9090
-          predicates:
-            - Path=/uv/**
         - id: USER-SERVICE
           uri: http://localhost:9091
           predicates:
@@ -19,7 +15,3 @@ spring:
           uri: http://localhost:9092
           predicates:
             - Path=/ml/**
-        - id: ADVISOR-SERVICE
-          uri: http://localhost:9093
-          predicates:
-            - Path=/advice
